@@ -233,10 +233,10 @@ Make a concise, compelling argument (2-3 sentences max). Be direct and persuasiv
       <div className="max-w-4xl w-full mx-auto p-4 flex flex-col h-screen">
         <div className="bg-white rounded-lg shadow-sm p-6 mb-4">
           <h1 className="text-2xl font-bold text-gray-900 mb-1">
-            AI Debate Simulator
+            Vercel AI Gateway Demo: AI Debate Simulator
           </h1>
           <p className="text-gray-700 text-sm">
-            Watch AI debate both sides of any topic. Jump in anytime!
+            Test different Vercel AI Gateway integration methods while watching AI debate both sides of any topic!
           </p>
 
           {!hasStarted ? (
@@ -375,7 +375,7 @@ Make a concise, compelling argument (2-3 sentences max). Be direct and persuasiv
               </form>
 
               <div className="mt-3 text-center text-xs text-gray-600">
-                Powered by Vercel AI Gateway • {selectedSDK.name}
+                Powered by Vercel AI Gateway + Helicone • Using: {selectedSDK.name}
               </div>
             </div>
           </div>
