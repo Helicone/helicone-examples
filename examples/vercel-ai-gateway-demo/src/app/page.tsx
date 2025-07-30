@@ -41,6 +41,12 @@ const SDK_OPTIONS: SDKOption[] = [
     endpoint: "/api/chat-openai",
     stream: true,
   },
+  {
+    id: "azure-vercel",
+    name: "Azure + Vercel AI SDK",
+    endpoint: "/api/chat-azure-vercel",
+    stream: false,
+  },
 ];
 
 export default function Home() {
@@ -127,7 +133,6 @@ Make a concise, compelling argument (2-3 sentences max). Be direct and persuasiv
         }
       } else {
         const data = await response.json();
-        console.log("Non-streaming response data:", data);
         content = data.text || data.message || JSON.stringify(data);
       }
 
